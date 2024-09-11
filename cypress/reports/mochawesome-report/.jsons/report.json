@@ -5,9 +5,9 @@
     "passes": 2,
     "pending": 0,
     "failures": 0,
-    "start": "2024-09-11T13:12:32.947Z",
-    "end": "2024-09-11T13:12:44.439Z",
-    "duration": 11492,
+    "start": "2024-09-11T14:07:34.070Z",
+    "end": "2024-09-11T14:07:42.453Z",
+    "duration": 8383,
     "testsRegistered": 2,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "4b778356-b4ab-4b99-9557-073141bdccde",
+      "uuid": "56ce0187-cfdc-4262-a415-692d97312d99",
       "title": "",
       "fullFile": "cypress\\e2e\\Homepage.cy.js",
       "file": "cypress\\e2e\\Homepage.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "4a7a5995-0790-4ff3-9469-5aa812b8959b",
+          "uuid": "24db34bd-383a-4795-976c-a18fac9eccf8",
           "title": "Homepage",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "check the Homepage",
               "fullTitle": "Homepage check the Homepage",
               "timedOut": null,
-              "duration": 2877,
+              "duration": 2594,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -47,8 +47,8 @@
               "context": null,
               "code": "cy.url().should('include', 'demowebshop');\ncy.get('.header-logo img').should('be.visible').and('have.attr', 'alt', 'Tricentis Demo Web Shop');\ncy.get('.topic-html-content-header').should('contain.text', 'Welcome to our store');",
               "err": {},
-              "uuid": "9aa03f62-1e07-4351-bb30-9176a5cb457c",
-              "parentUUID": "4a7a5995-0790-4ff3-9469-5aa812b8959b",
+              "uuid": "5f49d4ff-beb6-41f4-8bf1-3cbf9b4922e6",
+              "parentUUID": "24db34bd-383a-4795-976c-a18fac9eccf8",
               "isHook": false,
               "skipped": false
             },
@@ -56,7 +56,7 @@
               "title": "should display all product categories",
               "fullTitle": "Homepage should display all product categories",
               "timedOut": null,
-              "duration": 1553,
+              "duration": 1619,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -65,21 +65,21 @@
               "context": null,
               "code": "// Select the list of categories\ncy.get('.block-category-navigation .listbox ul.list').should('be.visible').find('li').should('have.length', 7);\nconst expectedCategories = ['Books', 'Computers', 'Electronics', 'Apparel & Shoes', 'Digital downloads', 'Jewelry', 'Gift Cards'];\ncy.get('.block-category-navigation .listbox ul.list li').each(($el, index) => {\n  // const categoryText = $el.text().trim();\n  /// cy.log(`${expectedCategories[index]} = ${categoryText}`)\n  cy.wrap($el).should('contain.text', expectedCategories[index]);\n});",
               "err": {},
-              "uuid": "f7f5967f-21df-4316-8c33-cabfae984e8f",
-              "parentUUID": "4a7a5995-0790-4ff3-9469-5aa812b8959b",
+              "uuid": "ed74eb8b-b4e9-4120-a965-5a29dc363af6",
+              "parentUUID": "24db34bd-383a-4795-976c-a18fac9eccf8",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "9aa03f62-1e07-4351-bb30-9176a5cb457c",
-            "f7f5967f-21df-4316-8c33-cabfae984e8f"
+            "5f49d4ff-beb6-41f4-8bf1-3cbf9b4922e6",
+            "ed74eb8b-b4e9-4120-a965-5a29dc363af6"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 4430,
+          "duration": 4213,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

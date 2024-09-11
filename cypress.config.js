@@ -25,4 +25,9 @@ module.exports = defineConfig({
       json: true
     },
   },
+
+  video: true,
+  screenshotOnRunFailure: true,
+
+  retries:2 ,
 });
