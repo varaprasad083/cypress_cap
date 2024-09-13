@@ -4,3 +4,4 @@ cypress/videos/
 cypress/reports
 .env
 cypress-image-diff-html-report
+cypress/e2e/intercept.cy.js
