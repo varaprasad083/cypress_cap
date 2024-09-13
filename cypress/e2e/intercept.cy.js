@@ -3,8 +3,7 @@ describe('intercept data',()=>{
         cy.visit('https://demowebshop.tricentis.com');
         cy.intercept('GET','/register',{fixture:'loginfix.json'}).as('posts')
         cy.get('.ico-register').click()
-        cy.go('back')
-      
+
         cy.wait('@posts')
        
     })

@@ -1,7 +1,7 @@
 node_modules/
 cypress/screenshots/
 cypress/videos/
+cypress/e2e/intercept.cy.js
 cypress/reports
 .env
 cypress-image-diff-html-report
-cypress/e2e/intercept.cy.js
