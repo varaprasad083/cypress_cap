@@ -17,16 +17,3 @@ describe('Data Management', () => {
 
 
 
-// describe('Data Management with Fixtures', () => {
-//     it('should load product data from fixture', () => {
-//         // Load the fixture file
-//         cy.fixture('product').then((product) => {
-//             // Use fixture data in test
-//             cy.visit('https://demowebshop.tricentis.com');
-//             cy.intercept('GET', '/25-virtual-gift-card', product).as('getProduct');
-           
-//            cy.get(':nth-child(2) > .product-item > .details > .add-info > .buttons > .button-2').click()
-   
-//         });
-//     });
-// });
